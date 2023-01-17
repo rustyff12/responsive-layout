@@ -32,11 +32,12 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 auto;
+    /* border: 2px solid red; */
     /* position: relative; */
 }
 
 .logo {
-
+    min-width: 40px;
 }
 /* --- Hamburger --- */
 .nav-toggle {
@@ -73,13 +74,15 @@ header {
 
 .hero {
     margin: 0;
-    padding: 2rem 0;
+    padding: 5rem 0;
     background-color: var(--main-color);
 }
 
 .hero-title {
+    margin: 0;
     color: var(--white);
-    font-size: 5rem;
+    font-size: 3.5rem;
+    line-height: 100%;
 }
 
 .hero-title-em {
@@ -110,6 +113,8 @@ header {
 /* --- First --- */
 .first {
     background-color: var(--light-main);
+    text-align: center;
+    padding: 5rem 0;
 }
 
 .first-item > h2 {
@@ -120,6 +125,7 @@ header {
 .first-item > p {
     font-family: var(--montserrat);
     font-size: 1.125rem;
+    font-weight: 300;
 }
 
 /* --- Second --- */
@@ -132,12 +138,16 @@ header {
     font-family: var(--montserrat);
     font-size: 1.3125rem;
 }
+.second-container-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 
 .second-item {
     background-color: var(--main-color);
     color: var(--white);
     padding: 1.5rem;
-    margin-bottom: 1em;
 }
 
 .second-item > h2 {
@@ -149,15 +159,40 @@ header {
     font-size: 1.125rem;
 }
 
+.second-container-img {
+    width: 80vw;
+}
+
 /* --- Third --- */
 .third {
+    margin-top: 2rem;
+    padding: 2rem;
     background-color: var(--main-color);
     color: var(--white);
 }
-
+.third > h1 {
+    text-align: center;
+    font-size: 2rem;
+}
 .third > h2 {
     text-align: center;
     font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+.third > p {
+    font-family: var(--montserrat);
+    text-align: center;
+}
+
+.items-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.third-item {
+    width: 30%;
 }
 
 .third-item > h2 {
@@ -167,7 +202,7 @@ header {
 
 .third-item > p {
     font-family: var(--montserrat);
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 /* --- Media Queries --- */
@@ -176,6 +211,30 @@ header {
         display: flex;
         justify-content: space-between;
         gap: 10px
+    }
+    
+
+    .hero-aside {
+        align-self: flex-end;
+    }
+
+    .second {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-container-aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .second-item > h2 {
+        font-size: 2rem;
+    }
+
+    .second-item > p {
+        font-size: 1rem;
     }
 }
 
