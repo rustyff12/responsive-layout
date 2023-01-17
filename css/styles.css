@@ -33,13 +33,17 @@ img {
     margin: 0 auto;
     padding: 0 auto;
     /* border: 2px solid red; */
-    /* position: relative; */
+    position: relative;
 }
 
 .logo {
     min-width: 40px;
 }
 /* --- Hamburger --- */
+.nav {
+    width: 100%;
+}
+
 .nav-toggle {
     cursor: pointer;
     border: 0;
@@ -47,29 +51,89 @@ img {
     height: 3em;
     padding: 0em;
     border-radius: 50%;
+    background: #020808;
+    color: var(--white);
+    position: absolute;
+    left: 0;
 }
-.nav-toggle-off {
 
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+.hamburger::after {
+    transform: translateY(3px);
 }
 /* --- Navbar --- */
 header {
     margin: 0;
-    padding: 0;
+    padding: 1em 0;
     background-color: var(--dark-main-color);
+    text-align: center;
 }
 
-.nav-list {
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
 
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item {
-
+    padding: 1.1em 0.5rem;
 }
 
 .nav-link {
-
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.25rem;
+    text-transform: uppercase;
 }
 
+.nav-link--button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--secondary);
+    padding: .25em 1em;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link--button:hover {
+    opacity: 0.7;
+}
 /* --- Hero --- */
 
 .hero {
@@ -107,6 +171,10 @@ header {
     font-weight: 600;
     font-size: 1.5rem;
     font-family: var(--oswald);
+}
+
+.hero-btn:hover {
+    opacity: 0.7;
 }
 
 /* --- First --- */
@@ -211,6 +279,51 @@ header {
 
 /* --- Media Queries --- */
 @media (min-width: 700px) and (max-width: 999px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: auto;
+        /* border: 2px solid red; */
+    }
+
+    .logo {
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .nav-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        /* border: 2px solid red; */
+    }
+
+    .nav-first,
+    .nav-second {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-link--button {
+        margin: 0;
+        padding: 0.1em 1em;
+    }
+
     .row {
         display: flex;
         justify-content: space-between;
@@ -245,12 +358,48 @@ header {
         font-size: 1rem;
     }
 
-    .items-container {
-        border: 2px solid red;
-    }
 }
 
 @media (min-width: 1000px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: auto;
+    }
+
+    .logo {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .nav-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-first,
+    .nav-second {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
     .row {
         display: flex;
         justify-content: space-between;
@@ -259,6 +408,10 @@ header {
 
     .hero-title {
         font-size: 4.5rem;
+    }
+
+    .hero-aside {
+        align-self: flex-end;
     }
 
     .second {

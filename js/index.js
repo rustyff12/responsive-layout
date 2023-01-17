@@ -1,10 +1,7 @@
-// let hamEl = document.getElementById("btn");
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
 
-// function openNav() {
-//     console.log("Hello");
-// }
 
-// document.getElementById("btn").onclick = function() {
-//     this.classList.toggle("nav-toggle");
-//     this.classList.toggle("nav-toggle-off");
-// }
+navToggle.addEventListener('click', () => {
+    nav.classList.toggle('nav--visible');
+})
