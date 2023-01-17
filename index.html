@@ -1,34 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Layout</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--- Navbar --->
     <header>
-        <div class="container">
-            <button id="btn" class="nav-toggle" onclick="openNav()" aria-label="open navigation">
-                <span class="hamburger"></span>
-            </button>
-            <a href="#" class="logo">
-                <img src="./images/logo.svg" alt="Responsive logo">
-            </a>
-            <nav class="nav">
-                <ul class="nav-list nav-first">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                </ul>
-                <ul class="nav-list nav-second">
-                    <li class="nav-item"><a href="#" class="nav-link">Sign in</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link nav-link--button">Sign up</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <button
+          id="btn"
+          class="nav-toggle"
+          onclick="openNav()"
+          aria-label="open navigation"
+        >
+          <span class="hamburger"></span>
+        </button>
+        <a href="#" class="logo">
+          <img src="./images/logo.svg" alt="Responsive logo" />
+        </a>
+        <nav class="nav">
+          <ul class="nav-list nav-first">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+          <ul class="nav-list nav-second">
+            <li class="nav-item"><a href="#" class="nav-link">Sign in</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-link--button">Sign up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <!--- Hero --->
+    <section class="hero container">
+      <h1 class="hero-title">
+        Responsive layouts
+        <span class="hero-text-em">dont't have to be a struggle</span>
+      </h1>
+      <p class="hero-text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint dolore
+        dolorum illum ullam culpa quia ut iure. Mollitia, iste saepe.
+      </p>
+      <a href="#">Iwant to learn</a>
+    </section>
+
+    <!--- First Container -->
+    <section class="first container">
+      <div class="first-item">
+        <h2>Mobile-first</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias neque
+          sequi ipsam porro eos repellat aperiam temporibus provident? At minima
+          id recusandae esse obcaecati quos.
+        </p>
+      </div>
+      <div class="first-item">
+        <h2>Mobile-first</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias neque
+          sequi ipsam porro eos repellat aperiam temporibus provident? At minima
+          id recusandae esse obcaecati quos.
+        </p>
+      </div>
+      <div class="first-item">
+        <h2>Mobile-first</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias neque
+          sequi ipsam porro eos repellat aperiam temporibus provident? At minima
+          id recusandae esse obcaecati quos.
+        </p>
+      </div>
+    </section>
+
+    <!--- Second Container --->
+    <section class="second container">
+      <div class="second-container">
+        <h2>It doesn't have to be so hard</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis sunt
+          eum tenetur assumenda accusantium asperiores vitae repudiandae cum
+          corrupti. Temporibus unde dolores at vero provident laudantium error
+          odio, deserunt dignissimos accusamus, vel quasi magnam quas atque
+          cumque labore vitae officiis ipsa beatae. Fugit, cumque! Asperiores
+          vero error voluptatem accusantium minima?
+        </p>
+        <img src="./images/responsive.jpg" alt="Responsive Image" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+          animi, obcaecati dolorum, quaerat doloremque repellendus, ut nostrum
+          beatae earum excepturi asperiores! Eum nemo numquam nulla eos, minus a
+          odit reprehenderit iste quis possimus ratione iure ex dolorum
+          laudantium, eius aspernatur aliquid qui distinctio facere accusantium
+          harum nihil dicta neque alias?
+        </p>
+      </div>
+      <div class="second-container">
+        <div class="second-item">
+          <h2>Break it down</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            minus debitis accusantium mollitia autem minima, quos voluptatem
+            atque libero necessitatibus?
+          </p>
+        </div>
+        <div class="second-item">
+            <h2>Work your way up</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            minus debitis accusantium mollitia autem minima, quos voluptatem
+            atque libero necessitatibus?
+          </p>
+        </div>
+        <div class="second-item">
+            <h2></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            minus debitis accusantium mollitia autem minima, quos voluptatem
+            atque libero necessitatibus?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="third container">
+        <h1>Just scratching the surface</h1>
+        <div class="container">
+            <div class="third-item">
+                <h2>About our company</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nulla magnam maxime officia vitae, quis consequuntur dolorum expedita aliquid, fugit velit illum, adipisci asperiores! Sit!</p>
+            </div>
+            <div class="third-item">
+                <h2>Getting around</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Contact</p>
+            </div>
+            <div class="third-item">
+                <h2>Other things</h2>
+                <p>Here</p>
+                <p>are</p>
+                <p>other</p>
+                <p>things</p>
+            </div>
+            <div class="third-item">
+                <h2>And</h2>
+                <p>Here</p>
+                <p>are</p>
+                <p>more</p>
+                <p>things</p>
+            </div>
+        </div>
+    </section>
+
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
