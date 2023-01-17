@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Layout</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!--- Navbar --->
@@ -39,43 +42,49 @@
     </header>
 
     <!--- Hero --->
-    <section class="hero container">
-      <h1 class="hero-title">
-        Responsive layouts
-        <span class="hero-text-em">dont't have to be a struggle</span>
-      </h1>
-      <p class="hero-text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint dolore
-        dolorum illum ullam culpa quia ut iure. Mollitia, iste saepe.
-      </p>
-      <a href="#">Iwant to learn</a>
+    <section class="hero">
+      <div class="container row">
+          <h1 class="hero-title">
+            Responsive layouts
+            <span class="hero-title-em">dont't have to be a struggle</span>
+          </h1>
+          <div class="hero-aside">
+              <p class="hero-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint dolore
+                dolorum illum ullam culpa quia ut iure. Mollitia, iste saepe.
+              </p>
+              <a class="hero-btn" href="#">I want to learn</a>
+          </div>
+        </div>
     </section>
 
     <!--- First Container -->
-    <section class="first container">
-      <div class="first-item">
-        <h2>Mobile-first</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias neque
-          sequi ipsam porro eos repellat aperiam temporibus provident? At minima
-          id recusandae esse obcaecati quos.
-        </p>
-      </div>
-      <div class="first-item">
-        <h2>Mobile-first</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias neque
-          sequi ipsam porro eos repellat aperiam temporibus provident? At minima
-          id recusandae esse obcaecati quos.
-        </p>
-      </div>
-      <div class="first-item">
-        <h2>Mobile-first</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias neque
-          sequi ipsam porro eos repellat aperiam temporibus provident? At minima
-          id recusandae esse obcaecati quos.
-        </p>
+    <section class="first">
+      <div class="container">
+          <div class="first-item">
+            <h2>Mobile-first</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias neque
+              sequi ipsam porro eos repellat aperiam temporibus provident? At minima
+              id recusandae esse obcaecati quos.
+            </p>
+          </div>
+          <div class="first-item">
+            <h2>Mobile-first</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias neque
+              sequi ipsam porro eos repellat aperiam temporibus provident? At minima
+              id recusandae esse obcaecati quos.
+            </p>
+          </div>
+          <div class="first-item">
+            <h2>Mobile-first</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias neque
+              sequi ipsam porro eos repellat aperiam temporibus provident? At minima
+              id recusandae esse obcaecati quos.
+            </p>
+          </div>
       </div>
     </section>
 
@@ -101,7 +110,7 @@
           harum nihil dicta neque alias?
         </p>
       </div>
-      <div class="second-container">
+      <div class="second-container-aside">
         <div class="second-item">
           <h2>Break it down</h2>
           <p>
@@ -111,7 +120,7 @@
           </p>
         </div>
         <div class="second-item">
-            <h2>Work your way up</h2>
+          <h2>Work your way up</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
             minus debitis accusantium mollitia autem minima, quos voluptatem
@@ -119,7 +128,7 @@
           </p>
         </div>
         <div class="second-item">
-            <h2></h2>
+          <h2></h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
             minus debitis accusantium mollitia autem minima, quos voluptatem
@@ -129,34 +138,39 @@
       </div>
     </section>
 
+    <!--- Third Container --->
     <section class="third container">
-        <h1>Just scratching the surface</h1>
-        <div class="container">
-            <div class="third-item">
-                <h2>About our company</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nulla magnam maxime officia vitae, quis consequuntur dolorum expedita aliquid, fugit velit illum, adipisci asperiores! Sit!</p>
-            </div>
-            <div class="third-item">
-                <h2>Getting around</h2>
-                <p>Home</p>
-                <p>About</p>
-                <p>Contact</p>
-            </div>
-            <div class="third-item">
-                <h2>Other things</h2>
-                <p>Here</p>
-                <p>are</p>
-                <p>other</p>
-                <p>things</p>
-            </div>
-            <div class="third-item">
-                <h2>And</h2>
-                <p>Here</p>
-                <p>are</p>
-                <p>more</p>
-                <p>things</p>
-            </div>
+      <h2>Just scratching the surface</h2>
+      <div class="container">
+        <div class="third-item">
+          <h2>About our company</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            nulla magnam maxime officia vitae, quis consequuntur dolorum
+            expedita aliquid, fugit velit illum, adipisci asperiores! Sit!
+          </p>
         </div>
+        <div class="third-item">
+          <h2>Getting around</h2>
+          <p>Home</p>
+          <p>About</p>
+          <p>Contact</p>
+        </div>
+        <div class="third-item">
+          <h2>Other things</h2>
+          <p>Here</p>
+          <p>are</p>
+          <p>other</p>
+          <p>things</p>
+        </div>
+        <div class="third-item">
+          <h2>And</h2>
+          <p>Here</p>
+          <p>are</p>
+          <p>more</p>
+          <p>things</p>
+        </div>
+      </div>
     </section>
 
     <script src="./js/index.js"></script>

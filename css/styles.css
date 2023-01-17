@@ -6,15 +6,20 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: var(--oswald);
+    display: flex;
+    flex-direction: column;
 }
 
 /* --- Color Variables --- */
 :root {
     --dark-main-color: #2E323F;
     --main-color: #3B4050;
-    --light-main: #6F737F;
+    --light-main: #6f737f48;
     --white: #FFFFFF;
     --secondary: #A59678;
+    --oswald: 'Oswald', sans-serif;
+    --montserrat: 'Montserrat', sans-serif; 
 }
 
 /* --- Global --- */
@@ -24,9 +29,10 @@ img {
 
 .container {
     width: 80%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
-    position: relative;
+    padding: 0 auto;
+    /* position: relative; */
 }
 
 .logo {
@@ -65,3 +71,118 @@ header {
 
 /* --- Hero --- */
 
+.hero {
+    margin: 0;
+    padding: 2rem 0;
+    background-color: var(--main-color);
+}
+
+.hero-title {
+    color: var(--white);
+    font-size: 5rem;
+}
+
+.hero-title-em {
+    color: var(--secondary)
+}
+
+.hero-text {
+    font-family: var(--montserrat);
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 300;
+}
+
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: .25em 1em;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: var(--oswald);
+}
+
+/* --- First --- */
+.first {
+    background-color: var(--light-main);
+}
+
+.first-item > h2 {
+    color: var(--secondary);
+    font-size: 1.8rem;
+}
+
+.first-item > p {
+    font-family: var(--montserrat);
+    font-size: 1.125rem;
+}
+
+/* --- Second --- */
+.second-container > h2 {
+    color: var(--secondary);
+    font-size: 2.25rem;
+}
+
+.second-container > p {
+    font-family: var(--montserrat);
+    font-size: 1.3125rem;
+}
+
+.second-item {
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.second-item > h2 {
+    font-size: 1.875rem;
+}
+
+.second-item > p {
+    font-family: var(--montserrat);
+    font-size: 1.125rem;
+}
+
+/* --- Third --- */
+.third {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.third > h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.third-item > h2 {
+    color: var(--secondary);
+    font-size: 1.3125rem;
+}
+
+.third-item > p {
+    font-family: var(--montserrat);
+    font-size: 1rem;
+}
+
+/* --- Media Queries --- */
+@media (min-width: 700px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px
+    }
+}
+
+@media (min-width: 1000px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px
+    }
+}
